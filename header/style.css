@@ -5,11 +5,11 @@
     background-repeat: no-repeat;
   }
 .active_nav {
-    background-color: #da6b6b;
+    background-color:#ccc ;
 }
 nav {
     z-index: 11;
-    background-color: #ccc;
+    background-color:#857d7d;
 }
 #mega-menu-dropdown {
     margin-top: 10px !important;
@@ -67,6 +67,42 @@ nav {
   .slider.round:before {
     border-radius: 50%;
   }
-  
-  
-  
+  .imghover{
+    position: relative;
+}
+ .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+  background: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  border-radius: 8px;
+}
+.hover-content{
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  padding: 0px 10px;
+}
+.hover-content h5{
+  font-family: 'Michroma';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 135%;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+.hover-main img {
+  width: 100%;
+}
+.hover-main:hover .overlay{
+  opacity: 1;
+}  
